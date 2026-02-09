@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nuestro Juego 💘</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+.card{
+  background:white;
+  width:90%;
+  max-width:540px;
+  padding:30px;
+  border-radius:24px;
+  box-shadow:0 20px 35px rgba(0,0,0,0.25);
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+h2{color:#ff4d6d;}
+
+button{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:none;
+  border-radius:16px;
+  font-size:16px;
+  background:#ffe0e6;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#ff4d6d;
+  color:white;
+}
+
+.final-btn{
+  background:#ff4d6d;
+  color:white;
+  font-size:18px;
+}
+
+/* ❤️ Corazones flotando */
+.heart{
+  position:absolute;
+  color:rgba(255,255,255,0.6);
+  animation:float 6s linear infinite;
+  font-size:20px;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎶 Música (se activa en el primer clic) -->
+<audio id="bgMusic" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card" id="game">
+  <h2>💘 El reto de nuestro amor 💘</h2>
+  <p
